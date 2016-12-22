@@ -35,6 +35,8 @@ pts <- data.frame(
         ,rep(112:118, 2), rep(112, 12), rep(118, 12)
         # 8
         ,rep(124:130, 3), rep(124, 12), rep(130, 12)
+        # border
+        ,rep(-10, 84), rep(157, 84), rep(-9:156, 2)
     ),
     y = c(
         # T
@@ -71,9 +73,11 @@ pts <- data.frame(
         ,rep(50, 7), rep(37, 7), rep(49:38, 2)
         # 8
         ,rep(50, 7), rep(44, 7), rep(37, 7), rep(49:38, 2)
+        # border
+        ,rep(100:17, 2), rep(100, 166), rep(17, 166)
     )
 )
 ggplot(data = pts, aes(x, y)) + 
     geom_point() + 
-    xlim(0, 200) + 
-    ylim(0, 100)
+    xlim(-40, 200) + 
+    ylim(-20, 120)
