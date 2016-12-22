@@ -13,6 +13,8 @@ pts <- data.frame(
         ,rep(76, 9), c(rep(77:81, 3), 82), rep(82, 5)
         # g 
         ,rep(87, 9), c(rep(88:92, 3), 87), rep(93, 18)
+        # r
+        ,rep(98, 9), 99:104
     ),
     y = c(
         # T
@@ -27,6 +29,7 @@ pts <- data.frame(
         ,73:65, c(rep(73, 5), rep(69, 5), rep(65, 6)), 73:69
         # g
         ,73:65, c(rep(73, 5), rep(65, 5), rep(56, 6)), 73:56
+        ,73:65, rep(72, 6)
     )
 )
 ggplot(data = pts, aes(x, y)) + 
